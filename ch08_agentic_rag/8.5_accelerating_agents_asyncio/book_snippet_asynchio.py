@@ -34,7 +34,7 @@ async def extract_entities_from_image(image, page_num):
     )
 
     # Write response to individual JSON file
-    filename = f"./datasets/page_{page_num}_entities.json"
+    filename = f"../datasets/sample_data_asyncio/page_{page_num}_entities.json"
     with open(filename, "w") as f:
         f.write(response.choices[0].message.content)
 
@@ -42,7 +42,7 @@ async def extract_entities_from_image(image, page_num):
 
 
     # write time taken to a log file
-    with open("./datasets/extraction_times.log", "a") as log_file:
+    with open("../datasets/sample_data_asyncio/extraction_times.log", "a") as log_file:
         log_file.write(f"Page {page_num}: {end_time - start_time:.2f} seconds\n")
 
     return response.choices[0].message.content
@@ -50,7 +50,7 @@ async def extract_entities_from_image(image, page_num):
 
 async def main():
     # Convert PDF to images
-    images = convert_from_path("./datasets/Laptop_Order_Invoice.pdf", dpi=200)
+    images = convert_from_path("../datasets/sample_data_asyncio/Laptop_Order_Invoice.pdf", dpi=200)
 
     end_page_to_process = 3  # process only first 3 pages for demo purposes
     results = await asyncio.gather(
@@ -92,11 +92,11 @@ if __name__ == "__main__":
     start_overall = time.time()
     merged_json = asyncio.run(main())
     end_overall = time.time()
-    with open("./datasets/extraction_times.log", "a") as log_file:
+    with open("../datasets/sample_data_asyncio/extraction_times.log", "a") as log_file:
         log_file.write(
             f"Overall processing time: {end_overall - start_overall:.2f} seconds\n"
         )
 
     # Write to a new JSON file
-    with open("./datasets/merged_entities.json", "w") as f:
+    with open("../datasets/sample_data_asyncio/merged_entities.json", "w") as f:
         f.write(merged_json)
