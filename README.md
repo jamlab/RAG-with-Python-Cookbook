@@ -8,9 +8,9 @@ This repository contains all the code snippets and practical recipes from my O'R
   <img src="https://raw.githubusercontent.com/polzerdo55862/RAG-with-Python-Cookbook/main/rag_cookbook.png" width="350" />
 </a>
 
-Whether you're a developer or data scientist comfortable with Python, you'll find ready-to-use code and clear explanations to help you build RAG applications that actually work in production, not just in demos.
+Whether you're a developer or data scientist comfortable with Python, you'll find ready-to-use code to help you build RAG applications that actually work in production, not just in demos.
 
-**I'd love to hear your feedback!** Feel free to reach out, share your thoughts, or connect with me on [LinkedIn](https://www.linkedin.com/in/dominik-polzer/).
+**I'd love to hear your feedback!** Feel free to reach out, share your thoughts, or connect with me on [LinkedIn](https://www.linkedin.com/in/polzerdo/).
 
 ---
 
