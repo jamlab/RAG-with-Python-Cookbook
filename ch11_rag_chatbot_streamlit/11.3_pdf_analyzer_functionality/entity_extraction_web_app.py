@@ -5,10 +5,8 @@ from io import BytesIO
 from pydantic import BaseModel, Field
 from typing import Optional, List
 import re
-
-
 from pdf2image import convert_from_bytes
-
+import json
 
 def convert_pdf_to_images(pdf_file):
     # Read the PDF file and convert each page to an image
@@ -22,12 +20,6 @@ def convert_pdf_to_images(pdf_file):
         image.save(temp_path, "PNG")
         image_paths.append(temp_path)
     return image_paths
-
-
-
-import openai
-import base64
-from io import BytesIO
 
 
 def perform_ocr_and_extract_entities(image_paths):
