@@ -1,15 +1,12 @@
 import streamlit as st
 import os
+import app_helper_functions
 
 st.title("My Streamlit RAG App")
 
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
-
-
-import app_helper_functions
-
 
 def perform_rag(user_query):
     location_data = app_helper_functions.extract_the_city_and_country(user_query)
@@ -23,8 +20,6 @@ def perform_rag(user_query):
     response = app_helper_functions.send_prompt_to_llm(prompt)
 
     return response
-
-
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
