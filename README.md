@@ -10,7 +10,7 @@ This repository contains all the code snippets and practical recipes from my O'R
 
 Whether you're a developer or data scientist comfortable with Python, you'll find ready-to-use code to help you build RAG applications that actually work in production, not just in demos.
 
-**I'd love to hear your feedback!** Feel free to reach out, share your thoughts, or connect with me on [LinkedIn](https://www.linkedin.com/in/polzerdo/).
+**I'd love to hear your feedback!** Feel free to reach out, share your thoughts, or connect with me on [LinkedIn](https://www.linkedin.com/in/polzerdo/). I also share articles on [Medium](https://medium.com/@dmnkplzr), and now that the book is finished, I’m excited to publish there more regularly again.
 
 ---
 
@@ -78,6 +78,13 @@ Before diving into the recipes, make sure you have:
   - Neo4j account credentials (for Chapter 9 - Graph RAG)
 
 ### Installation
+
+You have **two options** to work with the code:
+
+#### Option 1: Use Google Colab (Recommended for Quick Start)
+Click any of the **"Open In Colab"** badges in the chapter table above. No installation needed—just click and run directly in your browser!
+
+#### Option 2: Clone for Local Development
 
 1. **Clone the repository:**
    ```bash
