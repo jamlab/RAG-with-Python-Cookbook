@@ -1,16 +1,41 @@
 # RAG with Python Cookbook
 
-Hey there! 👋
+Welcome 👋  
 
-This repository contains all the code snippets and practical recipes from my O'Reilly book **"RAG with Python Cookbook"**. Think of it as your hands-on guide to building production-ready RAG systems—from loading data and choosing the right embeddings to building agentic workflows and deploying apps at scale.
+This repository contains all code examples from my O’Reilly book **_RAG with Python Cookbook_**.
+
+The book is structured as a collection of modular, hands-on recipes that tackle specific parts of a Retrieval-Augmented Generation system — from data loading and embeddings to agentic workflows, Graph RAG, evaluation, and deployment.
+
+Each recipe focuses on one well-defined problem and shows you how to solve it in practice. You can use them independently or combine them into larger systems.
 
 <a href="https://learning.oreilly.com/library/view/rag-with-python/9798341600553/">
   <img src="https://raw.githubusercontent.com/polzerdo55862/RAG-with-Python-Cookbook/main/rag_cookbook.png" width="350" />
 </a>
 
-Whether you're a developer or data scientist comfortable with Python, you'll find ready-to-use code to help you build RAG applications that actually work in production, not just in demos.
+If you build LLM-powered applications in Python and want concrete, reusable patterns instead of abstract theory, this repository is for you.
 
-**I'd love to hear your feedback!** Feel free to reach out, share your thoughts, or connect with me on [LinkedIn](https://www.linkedin.com/in/polzerdo/). I also share articles on [Medium](https://medium.com/@dmnkplzr), and now that the book is finished, I’m excited to publish there more regularly again.
+---
+
+## 🎯 Who This Repository Is For
+
+This codebase is ideal if you:
+
+- Build LLM applications in Python  
+- Want practical, reusable RAG components  
+- Care about architecture and system design  
+- Explore Agentic RAG or Graph RAG  
+- Prefer working examples over theoretical discussions  
+
+---
+
+## 🧠 What Makes This Different
+
+- Modular, standalone recipes  
+- Clear focus on one problem at a time  
+- Covers classical RAG, Agentic RAG, and Graph RAG  
+- Emphasizes architectural thinking without locking you into a single framework  
+
+Rather than presenting one monolithic reference architecture, the book equips you with production-relevant building blocks that you can adapt to your own environment.
 
 ---
 
@@ -64,97 +89,104 @@ Each chapter includes practical recipes with working code that you can adapt for
 
 ---
 
-## 🏁 Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-Before diving into the recipes, make sure you have:
+Before running the examples, make sure you have:
 
-- **Python 3.9+** installed on your system
-- An **OpenAI API key** (required for most chapters) - [Get one here](https://platform.openai.com/api-keys)
-- Optional API keys depending on which chapters you explore:
-  - Anthropic API key (for Claude models in Chapter 2)
-  - Google API key (for Gemini models in Chapter 2)
-  - Neo4j account credentials (for Chapter 9 - Graph RAG)
+- Python 3.9+  
+- An OpenAI API key  
+- Optional API keys depending on the chapter  
+  - Anthropic for Claude models  
+  - Google for Gemini models  
+  - Neo4j credentials for Graph RAG  
 
-### Installation
 
-You have **two options** to work with the code:
+## 🚀 Getting Started
 
-#### Option 1: Use Google Colab (Recommended for Quick Start)
-Click any of the **"Open In Colab"** badges in the chapter table above. No installation needed—just click and run directly in your browser!
+### Prerequisites
 
-#### Option 2: Clone for Local Development
+Before running the examples, make sure you have:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/polzerdo55862/RAG-with-Python-Cookbook.git
-   cd RAG-with-Python-Cookbook
-   ```
+-   Python 3.9+\
+-   An OpenAI API key\
+-   Optional API keys depending on the chapter
+    -   Anthropic for Claude models\
+    -   Google for Gemini models\
+    -   Neo4j credentials for Graph RAG
 
-2. **Set up your environment:**
-   
-   Each chapter has its own `requirements.txt` file. Install dependencies for the chapter you want to explore:
-   ```bash
-   # Example: For Chapter 2 (Generation)
-   pip install -r ch02_generation/requirements_ch02_generation.txt
-   ```
+------------------------------------------------------------------------
 
-3. **Configure API keys:**
-   
-   Create a `.env` file in the chapter directory you're working on:
-   ```bash
-   OPENAI_API_KEY=your_key_here
-   ANTHROPIC_API_KEY=your_key_here  # if using Claude
-   GOOGLE_API_KEY=your_key_here     # if using Gemini
-   ```
+### Option 1: Run in Google Colab
 
-### Quick Start
+Most notebooks can be executed directly in Colab. No local setup
+required --- just click the Colab link in the table above.
 
-Want to jump right in? Start with Chapter 1 to build your first RAG system:
+------------------------------------------------------------------------
 
-1. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/polzerdo55862/RAG-with-Python-Cookbook/blob/main/ch01_RAG_intro/rag_basics.ipynb) **← Click here to run your first RAG example in Colab**
+### Option 2: Run Locally
 
-Or run it locally:
-```bash
-pip install jupyter
-jupyter notebook ch01_RAG_intro/rag_basics.ipynb
+Clone the repository:
+
+``` bash
+git clone https://github.com/polzerdo55862/RAG-with-Python-Cookbook.git
+cd RAG-with-Python-Cookbook
 ```
 
-### 📁 Datasets
+Create a virtual environment:
 
-The `datasets/` folder contains sample data used across the book's examples:
-- **PDFs, Word docs, and Markdown files** for document loading exercises
-- **CSV files** for structured data examples
-- **Images, audio, and video files** for multimodal RAG recipes
-- **Sample datasets** for agentic RAG and Graph RAG demonstrations
+``` bash
+python -m venv .venv
+source .venv/bin/activate   # macOS / Linux
+.venv\Scripts\activate      # Windows
+```
 
----
+Install dependencies for the chapter you want to explore:
 
-## 🤝 Contributions Welcome!
+``` bash
+pip install -r ch02_generation/requirements_ch02_generation.txt
+```
 
-Got ideas for improvements? Found a bug? Want to share how you're using these recipes? I'd love to hear from you! 
+Create a `.env` file in the relevant chapter directory:
 
-- **Report issues:** [Open an issue](https://github.com/polzerdo55862/RAG-with-Python-Cookbook/issues)
-- **Submit improvements:** Fork the repo and submit a pull request
-- **Share your projects:** Connect with me on [LinkedIn](https://www.linkedin.com/in/polzerdo/) to share what you're building
+``` bash
+OPENAI_API_KEY=your_key_here
+ANTHROPIC_API_KEY=your_key_here
+GOOGLE_API_KEY=your_key_here
+```
 
-Your feedback helps make this resource better for everyone in the RAG community!
+------------------------------------------------------------------------
 
----
+## 📁 Datasets
+
+The `datasets/` folder contains sample data used across the book:
+
+-   PDFs, Word, and Markdown files\
+-   CSV files for structured data examples\
+-   Images, audio, and video files\
+-   Example datasets for Agentic RAG and Graph RAG
+
+------------------------------------------------------------------------
+
+## 🤝 Contributions
+
+Contributions are welcome.
+
+-   Open an issue to report bugs\
+-   Submit a pull request for improvements\
+-   Share how you are using the recipes
+
+Feedback helps improve the material for the entire RAG community.
+
+------------------------------------------------------------------------
 
 ## 📄 License
 
-This repository contains code examples from the O'Reilly book "RAG with Python Cookbook". The code is provided for educational purposes to accompany the book. Please refer to O'Reilly's terms for commercial use.
+This repository contains code examples from the O'Reilly book *RAG with
+Python Cookbook*. The code is provided for educational purposes to
+accompany the book. Please refer to O'Reilly's terms for commercial use.
 
----
+------------------------------------------------------------------------
 
-## 🌟 Support the Project
-
-If you find this repository helpful:
-- ⭐ **Star this repo** to help others discover it
-- 📖 **Get the book** on [O'Reilly](https://learning.oreilly.com/library/view/rag-with-python/9798341600553/)
-- 🐛 **Report issues** to help improve the code
-- 💬 **Share feedback** on what recipes you'd like to see next
-
-Happy building! 🚀
+Happy building 🚀
