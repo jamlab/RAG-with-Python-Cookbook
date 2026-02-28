@@ -162,9 +162,9 @@ GOOGLE_API_KEY=your_key_here
 
 The `datasets/` folder contains sample data used across the book:
 
--   PDFs, Word, and Markdown files\
--   CSV files for structured data examples\
--   Images, audio, and video files\
+-   PDFs, Word, and Markdown files
+-   CSV files for structured data examples
+-   Images, audio, and video files
 -   Example datasets for Agentic RAG and Graph RAG
 
 ------------------------------------------------------------------------
@@ -173,8 +173,8 @@ The `datasets/` folder contains sample data used across the book:
 
 Contributions are welcome.
 
--   Open an issue to report bugs\
--   Submit a pull request for improvements\
+-   Open an issue to report bugs
+-   Submit a pull request for improvements
 -   Share how you are using the recipes
 
 Feedback helps improve the material for the entire RAG community.
