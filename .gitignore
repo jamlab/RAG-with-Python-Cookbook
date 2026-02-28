@@ -167,3 +167,6 @@ cython_debug/
 # Notebook testing reports (generated files)
 notebook_test_results.json
 notebook_validation_report.json
+
+# VS Code
+.vscode
