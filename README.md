@@ -16,29 +16,6 @@ If you build LLM-powered applications in Python and want concrete, reusable patt
 
 ---
 
-## 🎯 Who This Repository Is For
-
-This codebase is ideal if you:
-
-- Build LLM applications in Python  
-- Want practical, reusable RAG components  
-- Care about architecture and system design  
-- Explore Agentic RAG or Graph RAG  
-- Prefer working examples over theoretical discussions  
-
----
-
-## 🧠 What Makes This Different
-
-- Modular, standalone recipes  
-- Clear focus on one problem at a time  
-- Covers classical RAG, Agentic RAG, and Graph RAG  
-- Emphasizes architectural thinking without locking you into a single framework  
-
-Rather than presenting one monolithic reference architecture, the book equips you with production-relevant building blocks that you can adapt to your own environment.
-
----
-
 ## 📚 What's Inside
 
 | Chapter | Title                                         | Colab Notebook / Source Link                                                                                                                                                                                                                                     |
@@ -71,6 +48,30 @@ Rather than presenting one monolithic reference architecture, the book equips yo
 |    11.5 | ↳ Deploying Your Streamlit App Using Docker and AWS | [![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-181717?logo=github)](https://github.com/polzerdo55862/RAG-with-Python-Cookbook/blob/main/ch11_rag_chatbot_streamlit/11.5_deploy_docker_aws/README.md)                                              |
 
 > **💡 Tip:** Most notebooks can be run directly in Google Colab (no local setup required!). For local execution, each chapter folder contains its own `requirements.txt` file with the specific dependencies needed for that chapter.
+
+---
+
+
+## 🎯 Who This Repository Is For
+
+This codebase is ideal if you:
+
+- Build LLM applications in Python  
+- Want practical, reusable RAG components  
+- Care about architecture and system design  
+- Explore Agentic RAG or Graph RAG  
+- Prefer working examples over theoretical discussions  
+
+---
+
+## 🧠 What Makes This Different
+
+- Modular, standalone recipes  
+- Clear focus on one problem at a time  
+- Covers classical RAG, Agentic RAG, and Graph RAG  
+- Emphasizes architectural thinking without locking you into a single framework  
+
+Rather than presenting one monolithic reference architecture, the book equips you with production-relevant building blocks that you can adapt to your own environment.
 
 ---
 
