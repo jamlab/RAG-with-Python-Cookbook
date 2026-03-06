@@ -124,11 +124,18 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.venv/
+**/.venv_*/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Local generated vector DB artifacts
+**/chroma_db/
+ch11_rag_chatbot_streamlit/02_sql_chat_app/67c9b73e-6b92-4350-90b5-24b7d7252da5/
+ch11_rag_chatbot_streamlit/02_sql_chat_app/d85b44d4-c025-498f-a6e8-16121b72ce3b/
 
 # Spyder project settings
 .spyderproject
