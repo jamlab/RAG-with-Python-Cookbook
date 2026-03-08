@@ -1,0 +1,77 @@
+name: Test Ch03 Loading Data Notebook
+
+on:
+  push:
+    paths:
+      - 'ch03_loading_data/**'
+      - '.github/workflows/test_ch03.yml'
+  pull_request:
+    paths:
+      - 'ch03_loading_data/**'
+      - '.github/workflows/test_ch03.yml'
+
+jobs:
+  test-notebook:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr poppler-utils libmagic1 ffmpeg
+
+      - name: Set up PostgreSQL user and schema
+        env:
+          PGPASSWORD: postgres
+        run: |
+          psql -h localhost -U postgres -c "CREATE USER rag_user WITH PASSWORD 'raguserpassword123';"
+          psql -h localhost -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE postgres TO rag_user;"
+          psql -h localhost -U postgres -d postgres -c "
+            CREATE TABLE IF NOT EXISTS categories (
+              category_id SERIAL PRIMARY KEY,
+              category_name VARCHAR(100),
+              description TEXT
+            );
+            INSERT INTO categories (category_name, description) VALUES
+              ('Fiction', 'Fictional works'),
+              ('Science', 'Scientific topics'),
+              ('Technology', 'Technology related books');
+            GRANT SELECT ON categories TO rag_user;
+          "
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r ch03_loading_data/requirements.txt
+          pip install nbmake pytest
+
+      - name: Run notebook
+        run: |
+          pytest --nbmake ch03_loading_data/loading_data_to_RAG.ipynb \
+            -v \
+            --nbmake-timeout=300
