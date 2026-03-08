@@ -3,12 +3,12 @@ name: Test Ch03 Loading Data Notebook
 on:
   push:
     paths:
-      - 'ch03_loading_data/**'
-      - '.github/workflows/test_ch03.yml'
+      - "ch03_loading_data/**"
+      - ".github/workflows/test_ch03.yml"
   pull_request:
     paths:
-      - 'ch03_loading_data/**'
-      - '.github/workflows/test_ch03.yml'
+      - "ch03_loading_data/**"
+      - ".github/workflows/test_ch03.yml"
 
 jobs:
   test-notebook:
@@ -38,7 +38,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install system dependencies
         run: |
