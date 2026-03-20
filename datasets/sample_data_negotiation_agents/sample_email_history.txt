@@ -201,7 +201,7 @@ Please find below the updated manufacturing costs and recommended retail prices 
 - Gross Margin at UVP: 57%
 
 ### Important Notes:
-- Minimum sales prices include all costs and minimum acceptable margin
+- Minimum sales prices include all costs and minimum acceptable margin 
 - For orders >10 units, additional 2-5% volume discounts may be approved
 - For orders >25 units, contact regional manager for special pricing
 - Extended warranty and service packages have 70% margin
