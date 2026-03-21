@@ -19,7 +19,7 @@ If you build LLM-powered applications in Python and want concrete, reusable patt
 
 ---
 
-## 📚 What's Inside
+## Table of Content
 
 | Chapter | Title                                                         | Colab Notebook / Source Link                                                                                                                                                                                                                                                  |
 | ------: | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,11 +50,11 @@ If you build LLM-powered applications in Python and want concrete, reusable patt
 |    11.4 | ↳ Connect Your RAG App to a SQL Database                      | [![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-181717?logo=github)](https://github.com/polzerdo55862/RAG-with-Python-Cookbook/blob/main/ch11_rag_chatbot_streamlit/11.4_sql_database_connection/vanna_chat.py)                                              |
 |    11.5 | ↳ Deploying Your Streamlit App Using Docker and AWS           | [![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-181717?logo=github)](https://github.com/polzerdo55862/RAG-with-Python-Cookbook/blob/main/ch11_rag_chatbot_streamlit/11.5_deploy_docker_aws/README.md)                                                        |
 
-> **💡 Tip:** Most notebooks can be run directly in Google Colab (no local setup required!). For local execution, each chapter folder contains its own `requirements.txt` file with the specific dependencies needed for that chapter.
+> **💡 Tip:** Most notebooks can be run directly in Google Colab (no local setup required!).
 
 ---
 
-## 🎯 Who This Repository Is For
+## Who This Repository Is For
 
 This codebase is ideal if you:
 
@@ -66,18 +66,7 @@ This codebase is ideal if you:
 
 ---
 
-## 🧠 What Makes This Different
-
-- Modular, standalone recipes
-- Clear focus on one problem at a time
-- Covers classical RAG, Agentic RAG, and Graph RAG
-- Emphasizes architectural thinking without locking you into a single framework
-
-Rather than presenting one monolithic reference architecture, the book equips you with production-relevant building blocks that you can adapt to your own environment.
-
----
-
-## 🚀 What You'll Learn
+## What You'll Learn
 
 The book walks you through the entire journey of building RAG systems:
 
@@ -92,20 +81,7 @@ Each chapter includes practical recipes with working code that you can adapt for
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-Before running the examples, make sure you have:
-
-- Python 3.9+
-- An OpenAI API key
-- Optional API keys depending on the chapter
-  - Anthropic for Claude models
-  - Google for Gemini models
-  - Neo4j credentials for Graph RAG
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -160,7 +136,7 @@ GOOGLE_API_KEY=your_key_here
 
 ---
 
-## 📁 Datasets
+## Datasets
 
 The `datasets/` folder contains sample data used across the book:
 
@@ -171,7 +147,7 @@ The `datasets/` folder contains sample data used across the book:
 
 ---
 
-## 🤝 Contributions
+## Contributions
 
 Contributions are welcome.
 
@@ -182,13 +158,3 @@ Contributions are welcome.
 Feedback helps improve the material for the entire RAG community.
 
 ---
-
-## 📄 License
-
-This repository contains code examples from the O'Reilly book _RAG with
-Python Cookbook_. The code is provided for educational purposes to
-accompany the book. Please refer to O'Reilly's terms for commercial use.
-
----
-
-Happy building 🚀
