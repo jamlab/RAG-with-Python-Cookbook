@@ -1,6 +1,6 @@
 # RAG with Python Cookbook
 
-<a href="https://www.linkedin.com/in/polzerdo/"><img src="https://img.shields.io/badge/Follow%20Dominik-blue.svg?logo=linkedin"></a>
+<a href="https://www.linkedin.com/in/polzerdo/"><img src="https://img.shields.io/badge/Follow%20Dominik%20on-LinkedIn-0A66C2?logo=linkedin&logoColor=white"></a>
 <a href="https://medium.com/@dmnkplzr"><img src="https://img.shields.io/badge/Follow%20on-Medium-12100E?logo=medium"></a>
 
 Welcome 👋
