@@ -170,6 +170,7 @@ cython_debug/
 
 # O'Reilly cookbook chapters
 .oreily_cookbook_chapters/
+/chapters/
 
 # Notebook testing reports (generated files)
 notebook_test_results.json
