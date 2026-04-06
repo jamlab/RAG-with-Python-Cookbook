@@ -132,6 +132,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# Generated plot artifacts
+principal_component_plot.svg
+
 # Local generated vector DB artifacts
 **/chroma_db/
 02_Data/00_Vector_Store/
