@@ -178,3 +178,6 @@ notebook_validation_report.json
 
 # VS Code
 .vscode
+
+# GitHub metadata
+.github/
